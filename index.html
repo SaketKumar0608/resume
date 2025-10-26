@@ -36,4 +36,131 @@
     .section .subtitle{color:var(--muted);font-size:13px;margin-bottom:8px}
     .job{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);margin-bottom:10px}
     .job h3{margin:0;font-size:15px}
-    .job .meta{font-size:13px;color:var(--muted);margi
+    .job .meta{font-size:13px;color:var(--muted);margin-top:4px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:8px 10px;border-radius:8px;font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){.wrap{grid-template-columns:1fr;}.photo{height:100px} }
+
+    /* print friendly */
+    @media print{body{padding:0;background:white;color:black} .card{box-shadow:none;background:white} .pill{background:#eee}}
+
+    /* little utilities */
+    a, a:visited{color:var(--accent);text-decoration:none}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <aside class="card">
+      <div class="photo">SK</div>
+      <h1>Saket Kumar</h1>
+      <p class="role">Aspiring Computer Science / Software Engineer</p>
+
+      <div class="section">
+        <div class="subtitle">Contact</div>
+        <div class="contact">
+          <div>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></div>
+          <div>Phone: +91-XXXXXXXXXX</div>
+          <div>Location: City, Karnataka, India</div>
+          <div>Portfolio: <a href="#">your-portfolio.com</a></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="subtitle">Skills</div>
+        <div class="skills">
+          <span class="skill">C / C++</span>
+          <span class="skill">HTML &amp; CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Python</span>
+          <span class="skill">Data Structures</span>
+          <span class="skill">Algorithms</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="subtitle">Languages</div>
+        <div class="pill">English</div><div class="pill">Hindi</div>
+      </div>
+
+      <div class="section">
+        <div class="subtitle">Links</div>
+        <div class="contact">
+          <div>GitHub: <a href="#">github.com/yourhandle</a></div>
+          <div>LinkedIn: <a href="#">linkedin.com/in/yourhandle</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="card">
+      <section class="section">
+        <h2>Profile</h2>
+        <div class="subtitle">Short summary</div>
+        <p class="muted">A motivated Computer Science student (or graduate) with strong foundations in algorithms and systems programming. Quick learner, passionate about building efficient software and solving competitive programming problems. Looking for internships / roles in software development and backend engineering.</p>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="job">
+          <h3>Bachelor of Technology in Computer Science</h3>
+          <div class="meta">Institute Name — Year range • GPA: X.XX / 10</div>
+          <p class="muted">Relevant coursework: Data Structures, Algorithms, Operating Systems, DBMS, Computer Networks</p>
+        </div>
+        <div class="job">
+          <h3>Higher Secondary (12th)</h3>
+          <div class="meta">School Name — Year • Percentage: XX%</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Experience</h2>
+        <div class="job">
+          <h3>Software Developer Intern</h3>
+          <div class="meta">Company Name — Month YYYY to Month YYYY</div>
+          <p class="muted">- Built feature X using technology Y. Improved performance by Z%.
+- Worked on APIs and backend services; wrote unit tests and CI scripts.</p>
+        </div>
+
+        <div class="job">
+          <h3>Project: Gesture-to-Text Translator (example)</h3>
+          <div class="meta">Personal project — Tech: C, OpenCV, Embedded</div>
+          <p class="muted">Implemented hand-gesture recognition and mapping to text. Includes live camera input and a lightweight model for inference. (Link to repo)</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Projects</h2>
+        <div class="job">
+          <h3>Book Seller Website (HTML/CSS/JS)</h3>
+          <div class="meta">Repo / Demo link</div>
+          <p class="muted">E-commerce style static site for showcasing books with search and category filters.</p>
+        </div>
+        <div class="job">
+          <h3>Competitive Programming</h3>
+          <div class="meta">Profiles: CodeChef / Codeforces / LeetCode</div>
+          <p class="muted">Solved problems in arrays, graphs, greedy, DP. Rank / contests info (optional).</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Achievements &amp; Interests</h2>
+        <p class="muted">List scholarships, ranks (e.g., JEE rank), hackathon wins, or other achievements. Interests: OS design, competitive programming, ML basics.</p>
+      </section>
+
+      <section class="section">
+        <h2>Download / Print</h2>
+        <p class="muted">To save this as a PDF: press Ctrl+P (Windows) or Cmd+P (Mac) and choose "Save as PDF". Edit the fields directly in the HTML file before exporting.</p>
+      </section>
+    </main>
+  </div>
+
+  <!--
+    HOW TO EDIT:
+    - Replace placeholder texts (email, phone, institute, company names) with your own details.
+    - Add or remove sections as needed. This is a single-file resume ready to use.
+    - For more styles, ask me and I can produce a different template (minimal, one-page, two-column, or ATS-friendly).
+  -->
+</body>
+</html>
